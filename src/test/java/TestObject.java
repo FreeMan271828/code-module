@@ -1,5 +1,3 @@
-package Query;
-
 import java.util.List;
 
 /**
@@ -35,5 +33,20 @@ public class TestObject {
     }
     public void setD(List<Integer> d) {
         this.d = d;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("TestObject [a=");
+        builder.append(a);
+        builder.append(", b=");
+        builder.append(b);
+        builder.append(", c=");
+        builder.append(c);
+        builder.append(", d=");
+        builder.append(d);
+        builder.append("]");
+        return builder.toString();
     }
 }
